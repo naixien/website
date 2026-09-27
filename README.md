@@ -36,9 +36,11 @@ To swap to a free Formspree (or similar) endpoint later:
 
 ## GitHub Pages
 
-Intended public URL after Pages is enabled on `main` (root):
+**Production URL:** [https://naixien.com](https://naixien.com)
 
-**https://naixien.github.io/website/**
+The default Pages host [https://naixien.github.io/website/](https://naixien.github.io/website/) may still work alongside the custom domain.
+
+Custom domain is set via the root `CNAME` file (`naixien.com`). DNS (apex A/AAAA → GitHub Pages; `www` CNAME → `naixien.github.io`) is configured at the registrar. After the domain verifies in **Settings → Pages**, enable **Enforce HTTPS** if it is not already checked (GitHub may need a short wait to issue the certificate).
 
 ### Enable Pages (if not already on)
 
@@ -47,10 +49,6 @@ Intended public URL after Pages is enabled on `main` (root):
 3. Source: **Deploy from a branch**.
 4. Branch: `main` / folder: `/ (root)`.
 5. Save. Site usually appears within a few minutes.
-
-### Custom domain (later)
-
-Add a `CNAME` file at the repo root with your domain, then configure DNS (A/ALIAS or CNAME) per [GitHub Pages custom domain docs](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site).
 
 ## Brand note
 
