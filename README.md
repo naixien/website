@@ -12,6 +12,7 @@ This repository ships a GitHub Pages-ready, multi-page HTML/CSS/JS site. No back
 | `readiness.html` | Score explanation, 8 dimensions, sample mock, disclaimer |
 | `resources.html` | Five playbook teasers |
 | `network.html` | Coming-next NED / partner interest |
+| `opportunity-stack.html` | Founding waitlist for partner, member and Naixien software offers |
 | `about.html` | Mission, audiences, free-value-first |
 | `join.html` | Waitlist / 100 African Businesses Challenge |
 | `privacy.html` / `terms.html` | Legal stubs |
