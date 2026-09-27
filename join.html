@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Join the waitlist | Naixien</title>
+    <meta
+      name="description"
+      content="Join the Naixien waitlist and the 100 African Businesses Challenge early cohort."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Naixien<span aria-hidden="true"></span></a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <ul class="nav-links" id="site-nav">
+          <li><a href="readiness.html">Readiness</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="network.html">Network</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a class="nav-cta" href="join.html" aria-current="page"
+              >Join waitlist</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow reveal">100 African Businesses Challenge</p>
+          <h1 class="reveal">Join the early cohort</h1>
+          <p class="lead reveal">
+            Register interest to take the readiness assessment, receive your
+            Naixien Score and access the first wave of free playbooks and member
+            benefits.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container split">
+          <div class="reveal">
+            <!--
+              WAITLIST FORM HOOK (free / no paid services)
+              --------------------------------------------
+              Current behaviour: mailto to hello@naixien.com via assets/js/main.js
+              To swap later to Formspree (free tier) or another endpoint:
+                1. Create a form endpoint
+                2. Set data-form-endpoint="https://formspree.io/f/YOUR_ID"
+                3. Set data-form-mode="fetch" (or remove data-form-mode="mailto")
+              Fields collected: name, email, business name, country (+ optional interest)
+            -->
+            <form
+              class="form"
+              data-waitlist
+              data-form-mode="mailto"
+              data-mailto="hello@naixien.com"
+              data-subject="Naixien waitlist / early cohort"
+              novalidate
+            >
+              <div class="form-row">
+                <label for="name">Full name</label>
+                <input
+                  id="name"
+                  name="name"
+                  data-label="Name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  data-label="Email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form-row two">
+                <div class="form-row">
+                  <label for="business">Business name</label>
+                  <input
+                    id="business"
+                    name="business"
+                    data-label="Business name"
+                    type="text"
+                    autocomplete="organization"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="country">Country</label>
+                  <input
+                    id="country"
+                    name="country"
+                    data-label="Country"
+                    type="text"
+                    autocomplete="country-name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="interest">I am interested in</label>
+                <select id="interest" name="interest" data-label="Interest">
+                  <option value="readiness-waitlist">
+                    Business readiness waitlist
+                  </option>
+                  <option value="seeking-ned">Seeking an NED</option>
+                  <option value="become-ned">Becoming an NED</option>
+                  <option value="partner">Partnering with Naixien</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="message">Anything we should know? (optional)</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  data-label="Message"
+                  rows="4"
+                ></textarea>
+              </div>
+              <p class="form-note">
+                Submitting opens your email client with a pre-filled message. No
+                account required. We will not sell your details.
+              </p>
+              <button class="btn btn-primary" type="submit">
+                Join the waitlist
+              </button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <p class="eyebrow">What early businesses get</p>
+            <h2>First 100 cohort</h2>
+            <ul class="audience-list">
+              <li>Register and complete a business profile</li>
+              <li>Take the Business Readiness Assessment</li>
+              <li>Receive your Naixien Score</li>
+              <li>Get a personalised improvement roadmap</li>
+              <li>Access early playbooks and member benefits</li>
+            </ul>
+            <p class="disclaimer">
+              The live scoring engine is not available on this marketing site.
+              Waitlist members will be invited when assessment opens.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-brand">Naixien</p>
+            <p>The African Business Opportunity Network.</p>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="readiness.html">Readiness</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="network.html">Network</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Get involved</h3>
+            <ul>
+              <li><a href="join.html">Join waitlist</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="terms.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; <span data-year></span> Naixien</span>
+          <span>Built for African business growth.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var interest = params.get("interest");
+        var select = document.getElementById("interest");
+        if (interest && select) {
+          var option = select.querySelector('option[value="' + interest + '"]');
+          if (option) select.value = interest;
+        }
+      })();
+    </script>
+  </body>
+</html>
